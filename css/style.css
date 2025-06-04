@@ -1,0 +1,34 @@
+.header{
+    background-color: blueviolet;
+    color: white;
+}
+.header:hover{
+    background-color: brown;
+}
+#one{
+    color: darkslateblue;
+}
+#two{
+    color: chocolate;
+}
+#three{
+    color: crimson;
+}
+#four,#five,#six
+{
+    color: deeppink;
+}
+*{
+    color: chartreuse;
+}
+.link{
+    text-decoration: none;
+    color: chartreuse;
+    background-color: chocolate;
+    padding: 10px;
+    border-radius: 10px;
+}
+.link:hover{
+    color: darkcyan;
+    background-color: aliceblue;
+}
