@@ -2,69 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000..................................................................................................., initial-scale=1.0">
-    <title>full_stack</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <style>
-      h2{
-        color: blueviolet;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <h1 style="color: brown; font-size: 50px;"> hello kprcas</h1>  
-  <h2>harini</h2>
-  <h3>dhanushiya</h3>
-  <h4>lokitha</h4>
-  <h5>dhanya</h5>
-  <p class="header"><strong>loream</strong> </strong>ipsum dolor sit<br> amet consectetur <em></em>adipisicing elit.<br>Error delectus praesentium animi omnis, nobis debitis repellat quasi nemo quis, neque beatae eum. Exercitationem unde qui est ea neque reprehenderit! Magni!</p>
-<ol>
-  <li id="one">k</li>
-  <li id="two">p</li>
-  <li id="three">r</li>
-</ol>
-<ul>
-  <li id="four">k</li>
-  <li id="five">p</li>
-  <li id="six">r</li> 
-  <B>kprcas</B>
-  <I>kprcas</I>
-  <ul>kprcas</ul>
-  <a class="link " href="https://www.whatsapp.com/"target="_blank">WHATSAPP</a>
-  <a class="link" href="home.html"target="_blank">home</a>
-  <img src="" width ="300"alt= "dogs">
-</html>
-<form action =login">
-<label form="email">email:</label>
-<input type="text"placeholder="enter your email">
-<label for="password">password</label>
-<input type="password"placeholder="enter your password">
-<button>submit</button>
-<audio src=""controls></audio>
-<video src=""controls></video>
-<section id="home" style="height:500px;">
-  <div>
-    <span>home</span>
-  </div>
-</section>
-<section id="contact" style="height:500px;">
-  <div>
-    <span>contact</span>
-  </div>
-</section>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Enter and Display Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    input {
+      margin-bottom: 10px;
+      display: block;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
 
-<section id="skills" style="height:500px;">
-  <div>
-    <span>skills</span>
-  </div>
-</section>
-<section id="project" style="height:500px;">
-  <div>
-    <span>project</span>
-  </div>
-</section>
-<div>
-  <span> footer copyrights</span>
-</div>
-</form>
-</footer>
+  <h2>Enter Your Details</h2>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Enter your name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter your email">
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" placeholder="Enter your age">
+
+  <button onclick="displayDetails()">Submit</button>
+
+  <div id="output"></div>
+
+  <script>
+    function displayDetails() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const age = document.getElementById('age').value;
+
+      const outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = `
+        <h3>Entered Details:</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Age:</strong> ${age}</p>
+      `;
+    }
+  </script>
+
+</body>
+</html> 
